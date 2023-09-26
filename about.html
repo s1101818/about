@@ -9,15 +9,28 @@
 	<table width="70%">
 		<tr>
 			<td>
-				<img src="cliff.jpg" width="110%"></img>
-			</td>>
+				<img src="cliff.jpg" width="110%" id="pic" onmouseover="change1()" onmouseout="change2()"></img>
+			</td>
+
 			<td>
-				<h1>name:徐廣亮</h1>
-				<!-- h1~h6標籤重要程度依序下降 -->
-				<h2>email:s1101818@gm.pu.edu.tw</h2>
-			</td>>
+				<h1>楊子青</h1>
+				<h2 id="h2text">Tzyy-Ching Yang</h2>
+			</td>
 		</tr>
 	</table>
+	<script>
+		function change1() {
+  			document.getElementById("pic").src = "mountain.jpg";
+  			document.getElementById("h2text").innerText = "靜宜資管";
+		}
+
+		function change2() {
+  			document.getElementById("pic").src = "cliff.jpg";
+  			document.getElementById("h2text").innerText = "Tzyy-Ching Yang";
+		}
+	</script>
+
+
 	<table width="70%" border="1">
 		<tr>
 			<td>
